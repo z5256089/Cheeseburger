@@ -11,7 +11,7 @@ void loop() {
   }
   
   if(Serial3.available()) {
-    Serial.write(Serial3.read());
-    Serial.println(Serial3.readString());
+    String data = Serial3.readString();
+    // Serial.println(data[0]);
   }
 } 
